@@ -1,11 +1,23 @@
-html {
-    scroll-behavior: smooth;
+html { scroll-behavior: smooth; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.fade-in { animation: fadeIn 1s ease-out; }
+.pulse { animation: pulse 2s infinite; }
+.slide-up { animation: fadeIn 0.8s ease-in-out; }
+
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
     background: linear-gradient(135deg, #003399 0%, #0055aa 100%);
     color: #333;
 }
@@ -17,133 +29,82 @@ body {
     padding: 30px;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-header {
-    text-align: center;
-    border-bottom: 3px solid #003399;
-    padding-bottom: 20px;
-}
-
-.logo { height: 70px; margin-bottom: 10px; }
-
-nav { margin-top: 15px; }
-
+header { text-align: center; border-bottom: 3px solid #003399; padding-bottom: 20px; }
 nav a {
     margin: 0 12px;
     text-decoration: none;
     color: #003399;
     font-weight: bold;
-    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+nav a:hover { color: #FFD700; border-bottom: 2px solid #FFD700; }
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #f9f9f9;
 }
 
-nav a:hover { color: #FFD700; }
-
-.hero {
-    background: #f1f7ff;
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin: 30px 0;
+.info-table th, .info-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.cities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.info-table th {
+    background-color: #003399;
+    color: white;
 }
 
-.city-card {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fff;
+.info-table tr:hover {
+    background-color: #f1f1f1;
     transition: 0.3s;
 }
 
-.city-card:hover { transform: translateY(-5px); border-color: #FFD700; }
-
-.culture-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.culture-box {
+.cities-grid { display: flex; gap: 20px; flex-wrap: wrap; }
+.city-card {
     flex: 1;
-    min-width: 280px;
-    background: #f9f9f9;
+    min-width: 250px;
     padding: 20px;
-    border-radius: 10px;
-    border-top: 4px solid #FFD700;
-}
-
-.news-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.news-card {
-    padding: 20px;
-    background: #fffdf2;
-    border-radius: 10px;
-    border-left: 5px solid #003399;
-}
-
-.tag {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #003399;
-    text-transform: uppercase;
-}
-
-.contact-flex {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.contact-form {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contact-form input, textarea {
-    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 12px;
+    transition: all 0.4s;
+}
+.city-card:hover {
+    background: #003399;
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.contact-info { flex: 1; padding: 10px; }
-
+.hero { background: #f0f7ff; padding: 60px; text-align: center; border-radius: 15px; }
 .btn {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 15px 30px;
     background: #FFD700;
     color: #003399;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 25px;
-    cursor: pointer;
+    border-radius: 50px;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.btn:hover { background: #003399; color: white; transform: translateY(-3px); }
 
-.btn:hover { background: #003399; color: #fff; }
+.culture-container { display: flex; gap: 15px; flex-wrap: wrap; }
+.culture-box { flex: 1; min-width: 280px; background: #fdfdfd; padding: 20px; border-left: 5px solid #FFD700; border-radius: 8px; }
+.news-card { padding: 20px; background: #fffdf2; border-left: 5px solid #003399; margin-bottom: 10px; border-radius: 10px; }
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.8rem;
-    color: #888;
-}
+.contact-form { display: flex; flex-direction: column; gap: 10px; max-width: 600px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; }
 
-section { padding: 40px 0; border-bottom: 1px solid #eee; }
+section { padding: 50px 0; border-bottom: 1px solid #eee; }
+footer { text-align: center; margin-top: 30px; color: #777; }
 
 @media (max-width: 600px) {
-    .contact-flex { flex-direction: column; }
-    nav a { display: block; margin: 10px 0; }
+    nav { display: flex; flex-direction: column; }
 }

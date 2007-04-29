@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Kosovo - Guida e Plotë</title>
+    <title>Explore Kosovo - Guida Interaktive</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="wrapper">
+    <div class="wrapper fade-in">
         <header>
             <a href="#home" class="logo-link">
                 <img src="logo.png" alt="Logo" class="logo">
@@ -26,74 +26,86 @@
         <main>
             <section id="home" class="hero">
                 <h2>Mirë se vini në zemrën e Ballkanit</h2>
-                <p>Eksploroni shtetin më të ri të Evropës, ku historia antike takohet me rininë dhe energjinë moderne.</p>
-                <a href="#vendet" class="btn">Zbuloni Destinacionet</a>
+                <p>Eksploroni shtetin ku historia takohet me rininë dhe energjinë moderne.</p>
+                <a href="#vendet" class="btn pulse">Zbuloni Destinacionet</a>
             </section>
 
             <section id="vendet">
                 <h2>Qytetet Kryesore</h2>
                 <div class="cities-grid">
-                    <div class="city-card"><h3>Prishtina</h3><p>Kryeqyteti i kafesë, monumentit Newborn dhe jetës dinamike.</p></div>
-                    <div class="city-card"><h3>Prizreni</h3><p>Muzeu i gjallë nën qiell të hapur me Kalanë dhe Shadërvanin.</p></div>
-                    <div class="city-card"><h3>Peja</h3><p>Aty ku nisin Bjeshkët e Nemuna dhe Guri i Kuq.</p></div>
-                    <div class="city-card"><h3>Gjakova</h3><p>E njohur për stilin unik të jetesës dhe Çarshinë e Madhe.</p></div>
+                    <div class="city-card"><h3>Prishtina</h3><p>Kryeqyteti dinamik.</p></div>
+                    <div class="city-card"><h3>Prizreni</h3><p>Muzeu i gjallë.</p></div>
+                    <div class="city-card"><h3>Peja</h3><p>Bjeshkët e Nemuna.</p></div>
+                </div>
+
+                <h3 style="margin-top: 40px;">Krahasimi i Destinacioneve</h3>
+                <div style="overflow-x: auto;">
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>Qyteti</th>
+                                <th>Atraksioni Kryesor</th>
+                                <th>Aktiviteti</th>
+                                <th>Lloji i Turizmit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Prishtina</td>
+                                <td>Newborn & Biblioteka</td>
+                                <td>Jeta e natës / Kafe</td>
+                                <td>Urban</td>
+                            </tr>
+                            <tr>
+                                <td>Prizreni</td>
+                                <td>Kalaja & Shadërvani</td>
+                                <td>Festivale / Histori</td>
+                                <td>Kulturor</td>
+                            </tr>
+                            <tr>
+                                <td>Peja</td>
+                                <td>Gryka e Rugovës</td>
+                                <td>Alpinizëm / Zip-line</td>
+                                <td>Aventurë</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
             <section id="kultura">
                 <h2>Trashëgimia dhe Kultura</h2>
                 <div class="culture-container">
-                    <div class="culture-box">
+                    <div class="culture-box slide-up">
                         <h3>Tradita e Odës</h3>
-                        <p>Oda është simboli i mikpritjes kosovare, ku vendimet merreshin me fjalë të urta dhe bujari. "Besa" mbetet kodi moral i pathyeshëm.</p>
+                        <p>Oda është simboli i mikpritjes kosovare, ku vendimet merreshin me fjalë të urta.</p>
                     </div>
-                    <div class="culture-box">
+                    <div class="culture-box slide-up">
                         <h3>Kulinaria</h3>
-                        <p>Shijoni Flijan e pjekur në saç, Elbasanin, dhe qebapët e famshëm. Mos harroni kafenë turke që shoqëron çdo bisedë miqësore.</p>
-                    </div>
-                    <div class="culture-box">
-                        <h3>Arti & Muzika</h3>
-                        <p>Nga instrumentet tradicionale si çiftelia, deri te yjet botërorë si Dua Lipa e Rita Ora, Kosova është foleja e talentit.</p>
+                        <p>Shijoni Flijan e pjekur në saç dhe kafenë që shoqëron çdo bisedë.</p>
                     </div>
                 </div>
             </section>
 
             <section id="news">
-                <h2>Lajmet e Fundit & Eventet</h2>
+                <h2>Lajmet e Fundit</h2>
                 <div class="news-list">
                     <article class="news-card">
                         <span class="tag">TURIZËM</span>
-                        <h4>Hapet shtegu i ri "Via Ferrata" në Pejë</h4>
-                        <p>Një eksperiencë e re për adhuruesit e adrenalinës sapo është inauguruar në Grykën e Rugovës.</p>
-                    </article>
-                    <article class="news-card">
-                        <span class="tag">FESTIVAL</span>
-                        <h4>Sunny Hill Festival konfirmon datat</h4>
-                        <p>Festivali më i madh në rajon pritet të sjellë emra të mëdhenj të muzikës botërore në Prishtinë këtë verë.</p>
-                    </article>
-                    <article class="news-card">
-                        <span class="tag">KULTURË</span>
-                        <h4>DokuFest shpall temën e vitit 2026</h4>
-                        <p>Festivali i filmit dokumentar në Prizren do të fokusohet në mbrojtjen e ambientit dhe trashëgiminë digjitale.</p>
+                        <h4>Hapet shtegu i ri në Pejë</h4>
+                        <p>Një eksperiencë e re për adhuruesit e adrenalinës sapo është hapur.</p>
                     </article>
                 </div>
             </section>
 
             <section id="contact">
                 <h2>Na Kontaktoni</h2>
-                <div class="contact-flex">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Emri juaj" required>
-                        <input type="email" placeholder="Email-i juaj" required>
-                        <textarea placeholder="Mesazhi juaj" rows="5"></textarea>
-                        <button type="submit" class="btn">Dërgo Mesazhin</button>
-                    </form>
-                    <div class="contact-info">
-                        <p>📍 Prishtinë, 10000, Kosovë</p>
-                        <p>📞 +383 38 123 456</p>
-                        <p>📧 visit@kosovoguide.com</p>
-                    </div>
-                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Emri" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mesazhi" rows="4"></textarea>
+                    <button type="submit" class="btn">Dërgo Mesazhin</button>
+                </form>
             </section>
         </main>
 
