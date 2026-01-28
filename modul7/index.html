@@ -1,17 +1,20 @@
 <html>
   <body>
     <form>
+      <fieldset>
+      <legend>Personal informations:</legend>
+
       <label for="firstname">firstname :</label><br>
-      <input type="text" id="firstname" name="firstname"><br>
+      <input type="text" id="firstname" name="firstname" value="John" disabled required><br>
 
       <label for="lastname">lastname :</label><br>
-      <input type="text" id="lastname" name="lastname"><br>
+      <input type="text" id="lastname" name="lastname" required><br>
 
       <label for="password">Password :</label><br>
-      <input type="password" id="password" name="password"><br>
+      <input type="password" id="password" name="password" size="8" placeholder="password" required><br>
 
       <label for="email">Email :</label><br>
-      <input type="email" id="email" name="email"><br><br>
+      <input type="email" id="email" name="email" required><br><br>
 
       <input type="submit" id="submit" name="submit"><br><br>
 
@@ -35,6 +38,16 @@
 
 <input type="checkbox" id="travel" name="hobbies" value="travel">
 <label for="travel">Travel</label><br>
+<br>
+<label for="pet">chose a pet :</label>
+<select id="pet" name="pet">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="Parrot">parrot</option>
+</select> <br> <br>
+
+<textarea name="MESSAGE" rows="10" cols="20" maxlength="50"></textarea>
+</fieldset>   
 
 
 
