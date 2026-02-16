@@ -1,0 +1,40 @@
+h1{
+    color: green;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-align: center;
+}
+
+h2{
+    text-decoration: overline;
+    writing-mode: vertical-rl;
+}
+
+h3{
+    text-decoration: line-through;
+}
+
+h4{
+    text-decoration: underline;
+    font-family: "Refales Blighan DEMO VERSION.otf";
+    color: blue !important
+}
+
+@font-face {
+    font-family: "Refales Blighan DEMO VERSION.otf";
+    src: url("Refales Blighan DEMO VERSION.ttf") format("truetype");
+}
+
+#normalText{
+    font-style: normal;
+}
+
+#italicText{
+    font-style: italic;
+}
+
+#obliqueText{
+    font-style: oblique;
+}
+
+
