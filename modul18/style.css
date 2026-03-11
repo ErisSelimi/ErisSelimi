@@ -1,0 +1,7 @@
+#translate {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: beige;
+    transform: translate(20px, 39px);
+}
