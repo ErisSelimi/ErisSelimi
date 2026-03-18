@@ -2,6 +2,60 @@
     height: 200px;
     width: 200px;
     border-radius: 10px;
-    background-color: beige;
-    transform: translate(20px, 39px);
+    background-color: darkblue;
+    transform: translate(20px, 50px);
+}
+
+#scale {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 150px;
+    padding: 10px;
+    background-color: rgb(100, 100, 122);
+    transform: scale(2, 2);
+}
+
+#rotatex {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 100px;
+    padding: 10px;
+    background-color: rgb(71, 71, 121);
+    transform: rotateX(270deg);
+}
+
+#skewX {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 100px;
+    padding: 10px;
+    background-color: rgb(77, 77, 114);
+    transform: skewX(45deg);
+}
+
+#scalex {
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    background-color: rgb(100, 100, 122);
+    transform: scaleX(2);
+}
+
+#scaley {
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    background-color: rgb(100, 100, 122);
+    transform: scaleY(2);
+}
+
+#skewy {
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    background-color: rgb(77, 77, 114);
+    transform: skewY(20deg);
 }
