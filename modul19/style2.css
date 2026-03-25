@@ -1,0 +1,195 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    background-color: #87509c;
+    min-height: 100vh;
+    color: white;
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li { margin-left: 20px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    background-color: #643a79;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.btn-work {
+    background-color: #eb7d4b;
+    color: white;
+    text-decoration: none;
+    padding: 20px 55px;
+    font-weight: 700;
+    border-radius: 4px;
+    border-bottom: 4px solid #c86a40;
+}
+
+/* --- SERVICES SECTION --- */
+.services-section {
+    background-color: #1abc9c;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-title-area h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.title-underline {
+    width: 70px;
+    height: 4px;
+    background-color: rgba(0,0,0,0.15);
+    margin: 15px auto 25px;
+}
+
+.section-title-area p {
+    max-width: 600px;
+    margin: 0 auto 70px;
+    font-size: 17px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-box { flex: 1; }
+
+.service-icon {
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.service-box h3 { margin-bottom: 15px; font-weight: 700; }
+
+.contact-section {
+    background-color: #3c5499;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.input-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    background-color: #273a71;
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.contact-form textarea { margin-bottom: 40px; resize: none; }
+
+.btn-send {
+    background-color: #30bae7;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    font-weight: 700;
+    border-radius: 4px;
+    border-bottom: 4px solid #299ec5;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #344b8e;
+    padding: 45px 0;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.social-links a.active-social, .social-links a:hover {
+    color: #30bae7;
+}
+
+
+@media (max-width: 768px) {
+    .services-grid, .input-row, .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links { display: none; } 
+}
