@@ -103,7 +103,7 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* CONTACT */
+
 .contact {
     background: #3c5499;
     color: white;
@@ -181,4 +181,24 @@ textarea {
 
 .social a:hover {
     text-decoration: underline;
+}
+
+@media (min-width:600px){
+    body{
+        background-color: lightblue;
+        color: black;
+    }
+}
+
+@media (max-width:600px){
+    body{
+        background-color: darkblue;
+        color: white;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px){
+    img{
+        display: none;
+    }
 }
