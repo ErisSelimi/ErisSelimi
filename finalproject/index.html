@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Kosovo - Guida Interaktive</title>
+    <title>Explore Kosovo - Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="wrapper fade-in">
+    <div class="container">
         <header>
             <a href="#home" class="logo-link">
-                <img src="logo.png" alt="Logo" class="logo">
+                <img src="image_634e25.jpg" alt="Logo" class="logo">
             </a>
             <h1>Explore Kosovo</h1>
             <nav>
                 <a href="#home">HOME</a>
-                <a href="#vendet">QYTETET</a>
-                <a href="#kultura">KULTURA</a>
+                <a href="#cities">CITIES</a>
+                <a href="#culture">CULTURE</a>
                 <a href="#news">NEWS</a>
                 <a href="#contact">CONTACT</a>
             </nav>
@@ -27,90 +27,64 @@
             <section id="home" class="hero">
                 <h2>Mirë se vini në zemrën e Ballkanit</h2>
                 <p>Eksploroni shtetin ku historia takohet me rininë dhe energjinë moderne.</p>
-                <a href="#vendet" class="btn pulse">Zbuloni Destinacionet</a>
+                <a href="#cities" class="btn">Zbuloni Destinacionet</a>
             </section>
 
-            <section id="vendet">
+            <section id="cities">
                 <h2>Qytetet Kryesore</h2>
-                <div class="cities-grid">
-                    <div class="city-card"><h3>Prishtina</h3><p>Kryeqyteti dinamik.</p></div>
-                    <div class="city-card"><h3>Prizreni</h3><p>Muzeu i gjallë.</p></div>
-                    <div class="city-card"><h3>Peja</h3><p>Bjeshkët e Nemuna.</p></div>
+                <div class="grid">
+                    <div class="box"><h3>Prishtina</h3><p>Kryeqyteti dinamik.</p></div>
+                    <div class="box"><h3>Prizreni</h3><p>Muzeu i gjallë.</p></div>
+                    <div class="box"><h3>Peja</h3><p>Bjeshkët e Nemuna.</p></div>
                 </div>
 
-                <h3 style="margin-top: 40px;">Krahasimi i Destinacioneve</h3>
-                <div style="overflow-x: auto;">
-                    <table class="info-table">
-                        <thead>
-                            <tr>
-                                <th>Qyteti</th>
-                                <th>Atraksioni Kryesor</th>
-                                <th>Aktiviteti</th>
-                                <th>Lloji i Turizmit</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Prishtina</td>
-                                <td>Newborn & Biblioteka</td>
-                                <td>Jeta e natës / Kafe</td>
-                                <td>Urban</td>
-                            </tr>
-                            <tr>
-                                <td>Prizreni</td>
-                                <td>Kalaja & Shadërvani</td>
-                                <td>Festivale / Histori</td>
-                                <td>Kulturor</td>
-                            </tr>
-                            <tr>
-                                <td>Peja</td>
-                                <td>Gryka e Rugovës</td>
-                                <td>Alpinizëm / Zip-line</td>
-                                <td>Aventurë</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section id="kultura">
-                <h2>Trashëgimia dhe Kultura</h2>
-                <div class="culture-container">
-                    <div class="culture-box slide-up">
-                        <h3>Tradita e Odës</h3>
-                        <p>Oda është simboli i mikpritjes kosovare, ku vendimet merreshin me fjalë të urta.</p>
-                    </div>
-                    <div class="culture-box slide-up">
-                        <h3>Kulinaria</h3>
-                        <p>Shijoni Flijan e pjekur në saç dhe kafenë që shoqëron çdo bisedë.</p>
-                    </div>
+                <div class="video-box">
+                    <h3>Video Galeria</h3>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@kosovatreasures/video/7225887803995983110" data-video-id="7225887803995983110" style="max-width: 605px; min-width: 325px; margin: 0 auto;"> 
+                        <section> 
+                            <a target="_blank" title="@kosovatreasures" href="https://www.tiktok.com/@kosovatreasures?refer=embed">@kosovatreasures</a> 
+                        </section> 
+                    </blockquote> 
+                    <script async src="https://www.tiktok.com/embed.js"></script>
                 </div>
             </section>
 
             <section id="news">
                 <h2>Lajmet e Fundit</h2>
-                <div class="news-list">
-                    <article class="news-card">
-                        <span class="tag">TURIZËM</span>
-                        <h4>Hapet shtegu i ri në Pejë</h4>
-                        <p>Një eksperiencë e re për adhuruesit e adrenalinës sapo është hapur.</p>
-                    </article>
+                <div class="news-item">
+                    <span class="tag">TURIZËM</span>
+                    <h4>Hapet shtegu i ri në Pejë</h4>
+                    <p>Një eksperiencë e re për adhuruesit e adrenalinës sapo është hapur.</p>
+                </div>
+            </section>
+
+            <section id="culture">
+                <h2>Trashëgimia dhe Kultura</h2>
+                <div class="flex">
+                    <div class="info">
+                        <h3>Tradita</h3>
+                        <p>Mikpritja është vlera kryesore e popullit tonë.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ushqimi</h3>
+                        <p>Shijoni gatimet tradicionale si flija dhe pitja.</p>
+                    </div>
                 </div>
             </section>
 
             <section id="contact">
                 <h2>Na Kontaktoni</h2>
-                <form class="contact-form">
+                <form class="form">
                     <input type="text" placeholder="Emri" required>
                     <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mesazhi" rows="4"></textarea>
-                    <button type="submit" class="btn">Dërgo Mesazhin</button>
+                    <textarea placeholder="Mesazhi juaj" rows="4"></textarea>
+                    <button type="submit" class="btn">Dërgo</button>
                 </form>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 Explore Kosovo - Të gjitha të drejtat e rezervuara.</p>
+            <p>&copy; 2026 Explore Kosovo - Eris</p>
         </footer>
     </div>
 
