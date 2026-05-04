@@ -128,7 +128,13 @@ nav a:hover {
     margin: 0 auto; 
 }
 
-.form input, .form textarea { 
+.form input { 
+    padding: 12px; 
+    border: 1px solid #bbbbbb; 
+    border-radius: 8px; 
+}
+
+.form textarea { 
     padding: 12px; 
     border: 1px solid #bbbbbb; 
     border-radius: 8px; 
