@@ -68,6 +68,21 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
+.tabela-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabela-info th, .tabela-info td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.tabela-info th {
+    background: #eee;
+}
+
 .video-box {
     margin: 40px 0;
     text-align: center;
@@ -128,7 +143,7 @@ nav a:hover {
     margin: 0 auto; 
 }
 
-.form input { 
+.form input{ 
     padding: 12px; 
     border: 1px solid #bbbbbb; 
     border-radius: 8px; 
@@ -157,6 +172,3 @@ footer {
         margin: 10px 0; 
     }
 }
-
-
-
