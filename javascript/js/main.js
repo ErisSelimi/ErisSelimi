@@ -41,3 +41,8 @@ console.log(fullname);
 
 var school="digital";
 console.log(`hello from ${school}`);
+
+var var1=3;
+var var2=6;
+
+console.log(var1==3 || var1==4);
