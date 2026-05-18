@@ -45,3 +45,22 @@ alert(car.name);
 alert(car['color']);
 
 car.starEngine();
+
+function Computer(name, cpu, ram, rom){
+    this.name = name;
+    this.cpu = cpu;
+    this.ram = ram;
+    this.rom = rom;
+}
+
+var com1 = new Computer("macbook", "8-core", "8gb", "256gb");
+var com2 = new Computer("macbook2", "6-core", "8gb", "512gb");
+
+function Car(name, color, year, model){
+    this.name = name;
+    this.color = color;
+    this.year = year;
+    this.model = model;
+}
+
+var car1 = new Car("audi2", "black", 2026, "q3");
